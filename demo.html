@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation{
+    padding-top:30px;
+    padding-bottom:30px;
+    position:absolute;
+    top:0;
+    width:100%;
+    z-index:1;
+}
+  
+.navbar-right{
+    float:right;
+    padding-right:10%;
+}
+  
+.navbar-right a{
+    text-decoration:none;
+    padding:10px;
+    color: #fff;
+    font-family:Arial;
+    font-weight:900;
+}
+  
+.navbar-right a:hover{
+    text-decoration:underline;
+}
+
+
+.navbar-logo{
+    padding-left:10%;
+    font-family:Arial;
+    font-size:30px;
+    font-weight:bold;
+    text-decoration:none;
+    color:#fff; 
+}
+
+  
+.video-container {
+    z-index: -100;
+    width:100%;
+    height:75%;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+}
+  
+#video-bg{
+    width:100%;  
+}
+
+#quote {
+    color: #fff;
+    text-align: center;
+    padding-top: 200px;
+    font-family: Arial;
+}
+
+.g, .y, .m {
+    padding: 5px;
+}
+
+#main {
+    position: relative;
+    top: 600px; 
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.8em;
+}
+.heading3{
+    font-family:Monoton;
+    margin: 50px;
+    padding: 25px;
+    position: relative;
+    top: 50px;
+}
+
+.scale-up-element {
+    padding: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.scale-up-container {
+    display: flex;
+    max-width: fit-content;
+}
+
+.line {
+    position: relative;
+    top: 620px;
+}
+
+.heading{
+    text-align:center;
+    margin: 50px;
+    padding: 10px;
+    right: 5px;
+    font-family: 'Monoton';
+}
+
+.heading1{
+    font-size:30px;
+    text-align:center;
+    margin: 15px;
+    font-family: 'Lobster';
+    font-weight:bold;
+    color:mediumblue;
+    margin-bottom: 50px;
+}
+      
+.card-container
+{
+    position:absolute;
+    left:200px;
+}
+
+.card-container1{
+    position:absolute;
+    left:700px;
+}
+
+.card-container2{
+    position:absolute;
+    left:1200px;
+}
+
+#membership-details {
+    position: relative;
+    top: 650px;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.button{
+    position:absolute;
+    top: 700px;
+    left: 46%;
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: #fff;
+    border-radius: 15px;
+}
+
+
+.us{
+    text-align: center;
+    background-color:  #b3b3b3;
+    margin: 0%;
+    padding: 2%;    
+    width: 100%;
+    position: relative;
+    top: 1300px;
+    height: 140px;
+}
+.us a{
+    color: black;
+    text-decoration: none;
+}
+
+.contact-h3 {
+    margin: 5px;
+}
+
+
+
+
+
+</style>
+<body>
+    <header>
+        <div class="header">
+          <nav class="navigation">
+                <a href="#" class="navbar-logo">Y5 Fitness</a>
+                <div class="navbar-right">
+                    <a class="/about" href="/about">About</a>
+                    <a class="/t" href="/t">Tutorials</a>
+                    <a class="contact" href="#contact">Contact Us</a>
+                    <a href="/login" class="login-page">Sign up</a>
+                    <a href="/logup" class="login-page">Login</a>
+
+                </div>
+          </nav>
+          <div class="video-container">
+            <video autoplay loop muted id="video-bg">
+              <source src="https://player.vimeo.com/external/456103329.sd.mp4?s=c9c028e8fd59b730518e89a532f33cb0d633baec&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+            </video>
+          </div> 
+        </div>
+  </header>
+  <div id="main">
+        <div class="scale-up-container">
+                <h2 class="heading3">Why Y5 Gym?</h2>
+                <div class="head2">
+                <p class="scale-up-element">We are dedicated to helping you achieve your fitness goals and lead a healthier lifestyle. At our gym, we believe in providing a supportive and motivating environment that empowers our members to reach their full potential.
+                    Our team of certified trainers and fitness experts is committed to guiding you on your fitness journey, whether you are a beginner or an experienced fitness enthusiast. We offer a wide range of fitness programs and classes suitable for all fitness levels, ensuring that there is something for everyone.
+                    What sets us apart is our state-of-the-art facility equipped with top-of-the-line fitness equipment. From cardio machines and strength training equipment to functional training areas, we have everything you need to get in shape and stay fit.
+                    Not only do we focus on physical fitness, but we also prioritize overall well-being. Our gym offers nutrition counseling and personalized workout plans to complement your fitness routine and help you make sustainable lifestyle changes.
+                    We take pride in fostering a friendly and inclusive community where members can support and motivate each other. Our group fitness classes are a great way to connect with others who share similar fitness goals and interests.
+                    Safety is our utmost priority, and we maintain a clean and sanitized environment to ensure your health and well-being. Our staff is always available to assist and answer any questions you may have, ensuring that you have a smooth and enjoyable experience at our gym.
+                    Whether you want to build strength, improve endurance, lose weight, or simply stay active, our gym provides the resources and support you need to achieve your desired results. Join us today and take the first step towards a healthier and happier you!    
+                    We look forward to welcoming you to our gym and helping you unleash your full potential. Feel free to explore our website to learn more about our services, class schedules, and membership options. Don't hesitate to reach out to us if you have any inquiries or would like to schedule a tour. Let's embark on this fitness journey together!
+                </p>  
+                </div>
+        </div>
+  </div>
+  <hr class="line">
+  <div id="membership-details">
+    <h1 class="heading"> Membership Benefits include </h1>
+    <div class="card-container">
+        <h3 class="heading1"> Equipment </h3>
+        <ul>
+            <li> Threadmills</li><br><br><br>
+            <li> Exercise cycles  </li><br><br><br>
+            <li> Free weights</li><br><br><br>
+            <li> Cable crossover</li><br><br><br>
+            <li>Lateral X Trainers</li><br><br><br>
+            <li> Stair climbers </li>
+        </ul>
+    </div>
+    
+    <div class="card-container1">
+        <h3 class="heading1"> Life Styles </h3>
+        <ul>
+            <li> Personal Training</li><br><br><br>
+            <li> Team workouts</li><br><br><br>
+            <li> Cardio classes</li><br><br><br>
+            <li>Yoga classes</li><br><br><br>
+            <li> Training </li><br><br><br>
+            <li> Zumba classes</li>
+        </ul>
+    </div>
+
+    <div class="card-container2">
+        <h3 class="heading1"> Services </h3>
+        <ul>
+            <li> Health plan discount</li><br><br><br>
+            <li> 24 hours security  </li><br><br><br>
+            <li> Any where gym access </li><br><br><br>
+            <li> Cardio TVS </li><br><br><br>
+            <li>24 hours access</li><br><br><br>
+            <li> Wellness program</li><br><br><br>
+        </ul>
+    </div>
+    <hr class="line">
+    <button class="button" onclick="Redirect()" > <a href="/plans">Subscription Plans </a></button>
+  </div>
+  
+  <footer class="us" id="contact">
+      <h3 class="contact-h3">Contact Us</h3>
+      <a href="https://instagram.com/jolly_bytes_official?igshid=ZDc4ODBmNjlmNQ=="><img src="https://imagetolink.com/ib/h32W5wjDZv" alt="" class="ic1"></a>
+      <a href="https://youtube.com/@y5fitness769"><img src="https://imagetolink.com/ib/I42A0mMSEt" alt="" class="ic3"></a>
+      <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den"><img src="https://imagetolink.com/ib/RzxYupNJvv" alt=""></a>
+      <a href="https://www.facebook.com/profile.php?id=100077692856424&mibextid=ZbWKwL"><img src="https://imagetolink.com/ib/xJvmfCaIA1" alt=""></a>
+      <p>Ph : 7780116168</p>
+
+  </footer>
+  <script>
+    function Redirect() {
+      location.href ="/fitnessplans.html";
+    }
+  </script>
+</body>
+</html>

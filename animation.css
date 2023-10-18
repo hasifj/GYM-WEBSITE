@@ -1,0 +1,67 @@
+/* Reset some default styles */
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the animated text vertically and horizontally */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.animated-text {
+    text-align: center;
+}
+
+/* Style the anchor tag */
+.animated-text a {
+    display: inline-block;
+    font-size: 36px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    animation: fadeInUp 1s ease-in-out;
+    opacity: 0;
+}
+
+/* Pause the animation when .paused class is applied */
+.animated-text.paused a {
+    animation-play-state: paused;
+}
+
+/* Add a hover effect for the anchor tag */
+.animated-text a:hover {
+    color: #ff5733;
+}
+
+/* Add the animation */
+@keyframes fadeInUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Add the animation */
+.animated-text h1 {
+    opacity: 0;
+}
+
+/* Apply the animation when .appear class is added */
+.animated-text.appear h1 {
+    animation: fadeInUp 1s ease-in-out;
+    opacity: 1;
+}
+
+/* Pause the animation when .paused class is applied */
+.animated-text.paused h1 {
+    animation-play-state: paused;
+}
+
+/* Add a hover effect for the anchor tag */
+.animated-text a:hover {
+    color: #ff5733;
+}

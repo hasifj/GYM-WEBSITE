@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            .bg-2{
+    border-radius: 20px;
+}
+.bg-3{
+    border-radius: 20px;
+}
+.id1{
+    text-decoration: underline;
+}
+.bg-1{
+    background-color: rgba(255, 255, 255, 0.573);
+    color: rgb(0, 0, 0);
+    padding: 50px;
+    border-radius: 50px;
+}
+html{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+   body{
+     background-image: url("https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+    </style>
+    </head>
+<body>
+    <form action="/login" method="post">
+    <center><div class="bg-1">
+        <h1>Login</h1>
+        <input type="text"placeholder="username"class="bg-2"><br><br>
+        <input type="text"placeholder="password"class="bg-3"><br><br>
+        <input type="checkbox">stay signed in<br><br>
+        <button type="button" class="bg-2">Login</button>
+        <p class="id1">forgot password...?</p>
+
+    </div></center>
+</form>
+</body>
+</html>
